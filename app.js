@@ -12,7 +12,7 @@
 // ]
 
 // set the dimensions and margin of the graph
-const margin = {top: 60, right: 230, bottom: 50, left: 50},
+const margin = {top: 60, right: 230, bottom: 50, left: 70},
     width = 660 - margin.left - margin.right,
     height = 400 - margin.top - margin.bottom;
 
@@ -69,7 +69,7 @@ d3.csv("https://raw.githubusercontent.com/noelledusahel/d3_practice/master/land_
 
   // Add Y axis
   const y = d3.scaleLinear()
-    .domain([0, 3000000])
+    .domain([0, 10000000])
     .range([ height, 0 ]);
   svg.append("g")
     .call(d3.axisLeft(y).ticks(5))
