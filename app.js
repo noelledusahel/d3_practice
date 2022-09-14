@@ -64,12 +64,12 @@ d3.csv("https://raw.githubusercontent.com/noelledusahel/d3_practice/master/land_
       .attr("text-anchor", "end")
       .attr("x", 0)
       .attr("y", -20 )
-      .text("# of baby born")
+      .text("# of farms")
       .attr("text-anchor", "start")
 
   // Add Y axis
   const y = d3.scaleLinear()
-    .domain([0, 200000])
+    .domain([0, 3000000])
     .range([ height, 0 ]);
   svg.append("g")
     .call(d3.axisLeft(y).ticks(5))
