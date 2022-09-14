@@ -26,7 +26,7 @@ const svg = d3.select("#my_dataviz")
     .append("g")
     .attr("transform",`translate(${margin.left},${margin.top})`);
 
-d3.csv("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_dataset/5_OneCatSevNumOrdered_wide.csv").then(function(data){
+d3.csv("https://raw.githubusercontent.com/noelledusahel/d3_practice/master/land_data.csv").then(function(data){
     const keys = data.columns.slice(1)
     // color palette
     const color = d3.scaleOrdinal()
